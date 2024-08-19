@@ -1,13 +1,6 @@
 import '../../styles/cardcontainer.scss';
 import Card from '../../components/Card';
 
-/**
- * Component for rendering a container of cards displaying logements.
- * 
- * This component maps over an array of logements and renders a Card component for each logement.
- * 
- * @returns {JSX.Element} The CardContainer component.
- */
 
 function CardContainer({cards}) {
   return (
