@@ -1,0 +1,16 @@
+$padding-side: 100px;
+$padding-side-mobile: 20px;
+$footer-height: 209px;
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  min-height: calc(100vh - $footer-height);
+  margin: 0 auto;
+  padding: 0 $padding-side;
+
+  @media screen and (min-width: 320px) and (max-width: 767.98px) {
+    padding: 0 $padding-side-mobile;
+  }
+}

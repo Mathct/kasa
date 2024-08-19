@@ -1,9 +1,17 @@
+import Banner from '../../components/Banner';
+import CardContainer from '../../components/CardContainer';
+import { logements } from '../../data/logements';
+
+
+
 function Home() {
-  return (
-    <div>
-      <h1>Hello</h1>
-    </div>
-  )
+    return (
+      <div>
+        <Banner background={'shore'} />
+        <CardContainer cards={logements}/>
+      </div>
+    )
 }
 
-export default Home
+export default Home;
+
