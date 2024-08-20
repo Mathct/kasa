@@ -7,7 +7,7 @@ import './styles/index.scss'
 import Home from './pages/Home'
 import Header from './components/Header'
 import Layout from './components/Layout'
-import Error from './components/Error'
+import Error from './pages/Error'
 import Footer from './components/Footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))

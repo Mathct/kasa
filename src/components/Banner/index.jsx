@@ -1,18 +1,18 @@
 import '../../styles/banner.scss';
-import shore from '../../assets/shore.webp';
-import mountains from '../../assets/mountains.webp';
+import ocean from '../../assets/ocean.webp';
+import montagne from '../../assets/montagne.webp';
 
 
 function Banner({ background }) {
   return (
     <div className='kasa-banner'>
       <img 
-        src={background === 'shore' ? shore : mountains} 
+        src={background === 'ocean' ? ocean : montagne} 
         alt={background} 
-        className={background === 'shore' ? 'darken60' : 'darken30'}
+        className={background === 'ocean' ? 'darken60' : 'darken30'}
         loading="lazy" // Defer image loading
       />
-      <p>{background === 'shore' ? 'Chez vous, partout et ailleurs' : ''}</p>
+      <p>{background === 'ocean' ? 'Chez vous, partout et ailleurs' : ''}</p>
     </div>
   );
 }

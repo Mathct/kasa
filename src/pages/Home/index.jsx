@@ -7,7 +7,7 @@ import { logements } from '../../data/logements';
 function Home() {
     return (
       <div>
-        <Banner background={'shore'} />
+        <Banner background={'ocean'} />
         <CardContainer cards={logements}/>
       </div>
     )
