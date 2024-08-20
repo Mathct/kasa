@@ -20,7 +20,7 @@ header {
       color: black;
       width: 136px;
   
-      // Grâce à NavLink, le lien est souligné lorsque la page est active
+      // NavLink: page est active
       &.active {
         text-decoration: underline;
       }
