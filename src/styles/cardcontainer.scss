@@ -1,9 +1,5 @@
 .card-container {
     display: grid;
-    /* 
-       Define grid columns that will automatically adjust based on the available space.
-       Each column will have a minimum width of 340px and will expand to fill any remaining space equally.
-*/
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 50px 60px;
     justify-items: center;
