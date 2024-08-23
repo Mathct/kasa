@@ -1,4 +1,4 @@
-export const apropos = [
+export const aboutdata = [
     {
     title: 'Fiabilité',
     content:
