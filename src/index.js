@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import './styles/index.scss'
 import Home from './pages/Home'
+import About from './pages/About'
 import Header from './components/Header'
 import Layout from './components/Layout'
 import Error from './pages/Error'
@@ -18,6 +19,7 @@ root.render(
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Layout>
