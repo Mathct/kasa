@@ -8,8 +8,8 @@ import { aboutdata } from '../../data/about';
 function About() {
     return (
         <div>
-            <Banner background={'mountains'}></Banner>
-            <div className='kasa-values-container'>
+            <Banner background={'montagne'}></Banner>
+            <div className='kasa-data-container'>
                 {aboutdata.map(({ title, content }) =>
                     (
                         <Collapse key={title} title={title} content={content} />
