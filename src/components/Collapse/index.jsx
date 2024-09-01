@@ -12,13 +12,13 @@ function Collapse({ title, content }) {
 
     return (
         <div>
-            <div className='title__container' onClick={toggleContent}>
+            <div className='group-collapse' onClick={toggleContent}>
                 <span>{title}</span>
-                <div className={`arrow__container ${isContentOpen ? 'open' : ''}`} >
-                    <img src={chevron} alt="fleche" />
+                <div className={`chevron ${isContentOpen ? 'open' : ''}`} >
+                    <img src={chevron} alt="chevron" />
                 </div>
             </div>
-            <div className={`content ${isContentOpen ? 'open' : ''}`}>{content}</div>
+            <div className={`text ${isContentOpen ? 'open' : ''}`}>{content}</div>
         </div>
     );
 }

@@ -1,12 +1,12 @@
-.card-container {
+.home-group-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 50px 60px;
     justify-items: center;
+    background-color: #F6F6F6;
     margin-bottom: 50px;
     padding: 50px;
     border-radius: 25px;
-    background-color: #F6F6F6;
 
     @media screen and (min-width: 768px) and (max-width: 1056px) {
         gap: 25px 30px;

@@ -1,17 +1,17 @@
-.kasa-error {
+.error404 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    span {
+    .nb404 {
         color: #FF6060;
         font-weight: 700;
         font-size: 288px;
         padding-top: 41px;
     }
 
-    h2 {
+    .oups {
         color: #FF6060;
         font-weight: 500;
         font-size: 36px;
@@ -19,7 +19,7 @@
         text-align: center;
     }
 
-    .link {
+    .retour {
         color: black;
         font-weight: 500;
         font-size: 18px;
@@ -28,18 +28,18 @@
     }
 
     @media screen and (min-width: 320px) and (max-width: 767.98px) {
-        span {
+        .nb404 {
             font-size: 96px;
             padding-top: 77px;
         }
 
-        h2 {
+        .oups {
             font-size: 18px;
             line-height: 26px;
             padding: 105px 37.5px 113px 37.5px;
         }
 
-        .link {
+        .retour {
             font-size: 14px;
             margin-bottom: 114px;
         }

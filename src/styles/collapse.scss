@@ -1,7 +1,7 @@
 $container-color: #FF6060;
 $title-color: white;
 
-.title__container {
+.group-collapse {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@ $title-color: white;
     }
 }
 
-.arrow__container {
+.chevron {
     width: 32px;
     height: 32px;
     display: flex;
@@ -31,7 +31,7 @@ $title-color: white;
     }
 }
 
-.content {
+.text {
     padding: 0 15px;
     border-radius: 10px 10px 5px 5px;
     background-color: rgba(246, 246, 246, 0.45);
@@ -55,13 +55,13 @@ $title-color: white;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1056px) {
-    .content {
+    .text{
         font-size: 15px;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
-    .title__container {
+    .group-collapse {
         height: 30px;
         padding: 10px;
 
@@ -70,7 +70,7 @@ $title-color: white;
         }
     }
 
-    .arrow__container {
+    .chevron {
         width: 16px;
         height: 16px;
 
@@ -80,7 +80,7 @@ $title-color: white;
         }
     }
 
-    .content {
+    .text {
         font-size: 12px;
         line-height: 17px;
     }

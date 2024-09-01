@@ -5,7 +5,7 @@ import montagne from '../../assets/montagne.webp';
 
 function Banner({ background }) {
   return (
-    <div className='kasa-banner'>
+    <div className='banner'>
       <img 
         src={background === 'ocean' ? ocean : montagne} 
         alt={background} 
