@@ -9,7 +9,7 @@ function About() {
     return (
         <div>
             <Banner background={'montagne'}></Banner>
-            <div className='kasa-data-container'>
+            <div className='group-about'>
                 {aboutdata.map(({ title, content }) =>
                     (
                         <Collapse key={title} title={title} content={content} />
