@@ -3,13 +3,7 @@ import arrow_left from '../../assets/arrow_left.png';
 import arrow_right from '../../assets/arrow_right.png';
 import { useState, useEffect } from 'react';
 
-/**
- * Carrousel component renders a carousel for displaying a set of pictures.
- *
- * @param {Object} props - The properties object.
- * @param {Array} props.pictures - Array of picture URLs to be displayed in the carousel.
- * @returns {JSX.Element} The Carrousel component.
- */
+
 const Carrousel = ({ pictures }) => {
 
     const picturesExtended = [pictures[pictures.length - 1], ...pictures, pictures[0]];

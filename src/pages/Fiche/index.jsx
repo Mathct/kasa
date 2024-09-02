@@ -10,7 +10,7 @@ import Rating from '../../components/Rating';
 import Collapse from '../../components/Collapse';
 
 
-function Fiche() {
+function Fiche () {
   const { fichenb } = useParams();
   const apparts = logements.filter(appart => appart.id === fichenb);
 

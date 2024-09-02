@@ -2,14 +2,6 @@ import '../../styles/rating.scss';
 import starGrey from '../../assets/star_grey.png';
 import starPink from '../../assets/star_pink.png';
 
-/**
- * Rating Component
- * Renders a 5-star rating system with pink stars for filled and grey stars for empty.
- *
- * @param {Object} props - The props object.
- * @param {number} props.rating - The rating value (between 1 and 5).
- * @returns {JSX.Element} The rendered rating component.
- */
 
 function Rating({ rating }) {
     const stars = [];
