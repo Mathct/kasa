@@ -10,7 +10,7 @@ function Rating({ rating }) {
         if (i <= rating) {
             liststars.push(<img key={i} src={starPink} alt="etoile" />);
         } else {
-            liststars.push(<img key={i} src={starGrey} alt="vide" />);
+            liststars.push(<img key={i} src={starGrey} alt="sans etoile" />);
         }
     }
 
