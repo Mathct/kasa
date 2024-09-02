@@ -1,4 +1,4 @@
-import '../../sass/Carrousel.scss';
+import '../../styles/carrousel.scss';
 import arrow_left from '../../assets/arrow_left.png';
 import arrow_right from '../../assets/arrow_right.png';
 import { useState, useEffect } from 'react';

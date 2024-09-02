@@ -1,6 +1,6 @@
 
 
-import '../../sass/Flat.scss';
+import '../../styles/fiche.scss';
 import { useParams } from 'react-router-dom';
 import { logements } from '../../data/logements';
 import Error from '../Error';
@@ -10,9 +10,9 @@ import Rating from '../../components/Rating';
 import Collapse from '../../components/Collapse';
 
 
-function Flat () {
-  const { flatNumber } = useParams();
-  const apparts = logements.filter(appart => appart.id === flatNumber);
+function Fiche() {
+  const { fichenb } = useParams();
+  const apparts = logements.filter(appart => appart.id === fichenb);
 
   if (apparts.length === 0)  {
     return <Error />
@@ -52,4 +52,4 @@ function Flat () {
   }
 }
 
-export default Flat;
+export default Fiche;

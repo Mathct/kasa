@@ -1,4 +1,4 @@
-import '../../sass/Tags.scss';
+import '../../styles/tags.scss';
 
 
 /**

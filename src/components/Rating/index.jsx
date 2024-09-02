@@ -1,6 +1,6 @@
-import '../../sass/Rating.scss';
-import starGrey from '../../assets/star-grey.png';
-import starPink from '../../assets/star-pink.png';
+import '../../styles/rating.scss';
+import starGrey from '../../assets/star_grey.png';
+import starPink from '../../assets/star_pink.png';
 
 /**
  * Rating Component

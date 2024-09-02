@@ -10,6 +10,7 @@ import Header from './components/Header'
 import Layout from './components/Layout'
 import Error from './pages/Error'
 import Footer from './components/Footer'
+import Fiche from './pages/Fiche'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -21,6 +22,7 @@ root.render(
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
+          <Route path="/fiche/:fichenb" element={<Fiche />} />
         </Routes>
       </Layout>
       <Footer />
