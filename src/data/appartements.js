@@ -1,4 +1,4 @@
-export const logements = [
+export const appartements = [
 	{
 		"id": "c67ab8a7",
 		"title": "Appartement cosy",

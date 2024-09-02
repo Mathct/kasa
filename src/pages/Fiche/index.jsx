@@ -2,7 +2,7 @@
 
 import '../../styles/fiche.scss';
 import { useParams } from 'react-router-dom';
-import { logements } from '../../data/logements';
+import { appartements } from '../../data/appartements';
 import Error from '../Error';
 import Carrousel from '../../components/Carrousel';
 import Tags from '../../components/Tags';
@@ -12,7 +12,7 @@ import Collapse from '../../components/Collapse';
 
 function Fiche () {
   const { fichenb } = useParams();
-  const apparts = logements.filter(appart => appart.id === fichenb);
+  const apparts = appartements.filter(appart => appart.id === fichenb);
 
   if (apparts.length === 0)  {
     return <Error />
