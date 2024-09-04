@@ -1,4 +1,4 @@
-.kasa-flat {
+.fiche {
     margin-bottom: 50px;
 
     &-infos {
@@ -7,7 +7,7 @@
         margin: 24px 0 14px;
     }
 
-    &-where-tags {
+    &-tags {
         h2 {
             font-size: 36px;
             font-weight: 500;
@@ -24,13 +24,13 @@
     }
 }
 
-.kasa-who-ratings {
+.proprietaire-ratings {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 14px;
 
-    .kasa-who {
+    .proprietaire {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -53,7 +53,7 @@
     }
 }
 
-.kasa-desc {
+.fiche-desc {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -64,7 +64,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
-    .kasa-flat {
+    .fiche {
         margin-bottom: 25px;
 
         &-infos {
@@ -84,10 +84,10 @@
         }
     }
 
-    .kasa-who-ratings {
+    .proprietaire-ratings {
         flex-direction: row-reverse;
 
-        .kasa-who {
+        .proprietaire {
             h3 {
                 font-size: 12px;
             }
@@ -99,7 +99,7 @@
         }
     }
 
-    .kasa-desc {
+    .fiche-desc {
         flex-direction: column;
         gap: 20px;
 

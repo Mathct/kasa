@@ -16,7 +16,7 @@ const Carrousel = ({ pictures }) => {
 
     const displayedIndex = activeIndex === 0 ? pictures.length : activeIndex === pictures.length + 1 ? 1 : activeIndex;
 
-    // Effect to handle the infinite loop effect by resetting the index without transition
+    
     useEffect(() => {
         const lastIndex = pictures.length;
         const transitionDuration = 500;
@@ -29,7 +29,7 @@ const Carrousel = ({ pictures }) => {
         }
     }, [activeIndex, pictures.length]);
 
-    // Effect to re-enable the transition after it has been temporarily disabled
+    
     useEffect(() => {
         if (!transitionEnabled) {
             const timer = setTimeout(() => {

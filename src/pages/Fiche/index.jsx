@@ -26,23 +26,23 @@ function Fiche () {
 
     return (
     <div>
-      <div className='kasa-flat'>
+      <div className='fiche'>
           < Carrousel pictures={appart.pictures}/>
-          <div className='kasa-flat-infos'>
-            <div className='kasa-flat-where-tags'>
+          <div className='fiche-infos'>
+            <div className='fiche-tags'>
               <h2>{appart.title}</h2>
               <p>{appart.location}</p>
               < Tags tags={appart.tags} />
             </div>
-            <div className='kasa-who-ratings'>
-              <div className='kasa-who'>
+            <div className='proprietaire-ratings'>
+              <div className='proprietaire'>
                 <h3>{appart.host.name}</h3>
-                <img src={appart.host.picture} alt="owner"/>
+                <img src={appart.host.picture} alt="proprietaire"/>
               </div>
               < Rating rating={appart.rating} />
               </div>
           </div>
-          <div className='kasa-desc'>
+          <div className='fiche-desc'>
               <Collapse title={'Description'} content={appart.description} />
               <Collapse title={'Équipements'} content={equipements} />
           </div>
