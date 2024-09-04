@@ -5,7 +5,7 @@
     height: 100%;
     border-radius: 25px;
 
-    &__inner {
+    &__cadre {
         display: flex;
         width: 100%;
         height: 415px;
@@ -14,7 +14,7 @@
             transition: transform 0.5s ease-in-out;
         }
 
-        .carrousel__item {
+        .carrousel__photo {
             min-width: 100%;
             height: 100%;
             border-radius: 25px;
@@ -37,14 +37,14 @@
         transform: translateY(-50%);
         height: 367px;
 
-        .carrousel__counter {
+        .carrousel__compteur {
             font-size: 18px;
             font-weight: 500;
             color: white;
             align-self: flex-end;
         }
 
-        .carrousel__arrow {
+        .carrousel__fleche {
             cursor: pointer;
             width: 96px;
             height: 120px;
@@ -64,10 +64,10 @@
     @media screen and (min-width: 320px) and (max-width: 767.98px) {
         height: 255px;
 
-        &__inner {
+        &__cadre {
             height: 100%;
 
-            .carrousel-item {
+            .carrousel__photo {
                 border-radius: 10px;
             }
         }
@@ -75,11 +75,11 @@
         &__controls {
             height: 100%;
 
-            .carrousel__counter {
+            .carrousel__compteur {
                 display: none;
             }
 
-            .carrousel__arrow {
+            .carrousel__fleche {
                 width: 28px;
                 height: 32px;
 

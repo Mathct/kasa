@@ -15,8 +15,8 @@ const Carrousel = ({ pictures }) => {
     //transitionEnabled : Gère si la transition CSS est active ou non
     const [transitionEnabled, setTransitionEnabled] = useState(true);
 
-    const handlePrev = () => setActiveIndex(prevIndex => prevIndex - 1);
-     const handleNext = () => setActiveIndex(prevIndex => prevIndex + 1);
+    const Prev = () => setActiveIndex(prevIndex => prevIndex - 1);
+    const Next = () => setActiveIndex(prevIndex => prevIndex + 1);
 
      //Calculer l'indice de l'image affichée
     const displayedIndex = activeIndex === 0 ? pictures.length : activeIndex === pictures.length + 1 ? 1 : activeIndex;
@@ -47,7 +47,7 @@ const Carrousel = ({ pictures }) => {
     return (
         <div className="carrousel">
             <div
-                className={`carrousel__inner ${transitionEnabled ? 'transition' : ''}`}
+                className={`carrousel__cadre ${transitionEnabled ? 'transition' : ''}`}
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
                 onTransitionEnd={() => {
                     if (activeIndex === 0 || activeIndex === pictures.length + 1) {
@@ -57,18 +57,18 @@ const Carrousel = ({ pictures }) => {
                 }}
             >
                 {picturesExtended.map((picture, index) => (
-                    <div key={index} className="carrousel__item">
+                    <div key={index} className="carrousel__photo">
                         <img src={picture} alt={`Appartement ${index}`} />
                     </div>
                 ))}
             </div>
             {pictures.length > 1 && (
                 <div className="carrousel__controls">
-                    <div className="carrousel__arrow carrousel__arrow--left" onClick={handlePrev}>
+                    <div className="carrousel__fleche" onClick={Prev}>
                         <img src={arrow_left} alt="Flèche gauche" />
                     </div>
-                    <span className='carrousel__counter'>{displayedIndex}/{pictures.length}</span>
-                    <div className="carrousel__arrow carrousel__arrow--right" onClick={handleNext}>
+                    <span className='carrousel__compteur'>{displayedIndex}/{pictures.length}</span>
+                    <div className="carrousel__fleche" onClick={Next}>
                         <img src={arrow_right} alt="Flèche droite" />
                     </div>
                 </div>
