@@ -2,10 +2,15 @@ import '../../styles/collapse.scss';
 import chevron from '../../assets/chevron.png';
 import { useState } from 'react';
 
+//l13: Fonction qui inverse l'état isContentOpen
+//l22: La classe 'chevron' se voit ajouter la classe 'open' si le contenu est ouvert
+//l26: La classe 'text' se voit ajouter la classe 'open' si le contenu est ouvert
+
 
 function Collapse({ title, content }) {
     const [isContentOpen, setIsContentOpen] = useState(false);
 
+    
     const toggleContent = () => {
         setIsContentOpen(!isContentOpen);
     };
