@@ -2,6 +2,7 @@ import '../../styles/rating.scss';
 import starGrey from '../../assets/star_grey.png';
 import starPink from '../../assets/star_pink.png';
 
+//Ajout des étoiles
 
 function Rating({ rating }) {
     const liststars = [];
