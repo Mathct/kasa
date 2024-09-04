@@ -6,17 +6,22 @@ import { useState, useEffect } from 'react';
 
 const Carrousel = ({ pictures }) => {
 
+    //Le tableau picturesExtended est créé en ajoutant la dernière image (pictures[pictures.length - 1]) au début du tableau pictures et la première image (pictures[0]) à la fin.
     const picturesExtended = [pictures[pictures.length - 1], ...pictures, pictures[0]];
 
+    //activeIndex : Représente l'indice de l'image actuellement affichée. Il est initialisé à 1
     const [activeIndex, setActiveIndex] = useState(1);
+
+    //transitionEnabled : Gère si la transition CSS est active ou non
     const [transitionEnabled, setTransitionEnabled] = useState(true);
 
     const handlePrev = () => setActiveIndex(prevIndex => prevIndex - 1);
      const handleNext = () => setActiveIndex(prevIndex => prevIndex + 1);
 
+     //Calculer l'indice de l'image affichée
     const displayedIndex = activeIndex === 0 ? pictures.length : activeIndex === pictures.length + 1 ? 1 : activeIndex;
 
-    
+    //Gérer les cas où activeIndex atteint 0 (en revenant avant la première image) ou lastIndex + 1 (en allant après la dernière image).
     useEffect(() => {
         const lastIndex = pictures.length;
         const transitionDuration = 500;
@@ -29,7 +34,7 @@ const Carrousel = ({ pictures }) => {
         }
     }, [activeIndex, pictures.length]);
 
-    
+    //Réactiver la transition CSS juste après avoir désactivé temporairement celle-ci pour permettre un changement d'image
     useEffect(() => {
         if (!transitionEnabled) {
             const timer = setTimeout(() => {
