@@ -1,6 +1,6 @@
 import '../../styles/tags.scss';
 
-
+// ajout des mots clés
 
 function Tags({ tags }) {
     return (
