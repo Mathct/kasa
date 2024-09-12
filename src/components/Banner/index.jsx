@@ -9,8 +9,8 @@ function Banner({ background }) {
       <img 
         src={background === 'ocean' ? ocean : montagne} 
         alt={background} 
-        className={background === 'ocean' ? 'darken60' : 'darken30'}
-        loading="lazy" // Defer image loading
+        className={background === 'ocean' ? 'dark60' : 'dark30'}
+
       />
       <p>{background === 'ocean' ? 'Chez vous, partout et ailleurs' : ''}</p>
     </div>
